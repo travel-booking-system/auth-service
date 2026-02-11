@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: auth-service
+  docker:
+    compose:
+      enabled: true
+      file: ../infrastructure/docker/docker-compose.yml
+  datasource:
+    url: jdbc:postgresql://localhost:5432/authdb
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
