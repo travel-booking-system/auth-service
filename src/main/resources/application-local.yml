@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${LOCAL_DB_URL:jdbc:postgresql://localhost:5433/authdb}
-    username: ${LOCAL_DB_USERNAME:authuser}
-    password: ${LOCAL_DB_PASSWORD:authpass}
+    url: jdbc:postgresql://localhost:5433/authdb
+    username: authuser
+    password: authpass
     driver-class-name: org.postgresql.Driver
   docker:
     compose:
