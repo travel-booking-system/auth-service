@@ -11,7 +11,7 @@ public abstract class BaseIntegrationTest {
     
     @ServiceConnection
     static final PostgreSQLContainer<?> postgres =
-            new PostgreSQLContainer<>("postgres:17-bookworm");
+            new PostgreSQLContainer<>("postgres:17.4-bookworm");
      static {
         postgres.start(); // explicit start, no @Testcontainers needed
     }
